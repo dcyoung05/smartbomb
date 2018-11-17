@@ -6,11 +6,32 @@ var keyCodes = [
   { code: "32", value: "select" },
   { code: "27", value: "back" },
   { code: "461", value: "back" },
-  { code: "415", value: "play" },
-  { code: "19", value: "pause" },
-  { code: "412", value: "rewind" },
-  { code: "417", value: "fast_forward" }
+  { code: "117", value: "play" },
+  { code: "116", value: "pause" },
+  { code: "118", value: "rewind" },
+  { code: "119", value: "fast_forward" }
 ];
+
+/*
+R1: 117
+R2: 119
+L1: 116
+L2: 118
+
+DPL: 37
+DPU: 38
+DPR: 39
+DPD: 40
+
+Square: 113
+Tri: 112
+Circle: 27
+X: can't press
+
+Options: 114
+Share: can't press
+Touchpad: can't press
+*/
 
 var uiLevels = {
   topMenu : 0,

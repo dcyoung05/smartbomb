@@ -1,6 +1,6 @@
 var Constants = {
-  webOsMode: true,
-  corsProxy: "https://cors.io/",
+  webOsMode: false,
+  corsProxy: "https://elefth.org/gb-api/",
   appName: "smartbomb",
   cacheTime: 300000,
   liveVideoCheckTime: 60000,
