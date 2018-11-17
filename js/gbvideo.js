@@ -109,7 +109,7 @@ GbVideo.prototype.getSrc = function(quality) {
       };
     if (this.hdUrl && quality == "hd")
       return {
-        src: this.hdUrl + "?api_key=" + regToken,
+        src: this.hdUrl.replace("_4000", "_8000") + "?api_key=" + regToken,
         type: "video/mp4;mediaOption=" + escape(JSON.stringify(options))
       };
     if (this.highUrl && quality == "high")
