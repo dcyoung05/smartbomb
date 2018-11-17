@@ -3,13 +3,13 @@ var keyCodes = [
   { code: "38", value: "up" },
   { code: "39", value: "right" },
   { code: "40", value: "down" },
-  { code: "32", value: "select" },
+  { code: "13", value: "select" },
   { code: "27", value: "back" },
-  { code: "461", value: "back" },
-  { code: "117", value: "play" },
-  { code: "116", value: "pause" },
-  { code: "118", value: "rewind" },
-  { code: "119", value: "fast_forward" }
+  { code: "10009", value: "back" },
+  { code: "415", value: "play" },
+  { code: "19", value: "pause" },
+  { code: "412", value: "rewind" },
+  { code: "417", value: "fast_forward" }
 ];
 
 /*
