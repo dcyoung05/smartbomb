@@ -79,6 +79,8 @@ function setKeyHandler() {
             seekVideo(10);
             break;
         }
+
+        e.preventDefault();
       }
     }
   };

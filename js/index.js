@@ -340,15 +340,16 @@ function playVideo(quality) {
 
   mediaElementVideoSetup(function(){
     $("#video-container").show();
-    jsVideo.setSrc(currentlyPlayingVideo.getSrc(quality))
-    jsVideo.play();
 
     if (!currentlyPlayingVideo.live) {
       if (currentlyPlayingVideo.savedTime) {
-        jsVideo.setCurrentTime(currentlyPlayingVideo.savedTime);
+        jsVideo.addEventListener('loadedmetadata', function(e) { jsVideo.setCurrentTime(currentlyPlayingVideo.savedTime); });
       }
       timerInterval = setInterval(updateVideoTime, 20000);
     }
+
+    jsVideo.setSrc(currentlyPlayingVideo.getSrc(quality))
+    jsVideo.play();
 
     showControls();
     createTransportControls("#video-container", currentlyPlayingVideo.name);
